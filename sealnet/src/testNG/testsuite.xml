@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name = "sathish suite">
+<test name = "sathishtest suite" verbose="4"  parallel = "methods" thread-count = "4">
+<parameter name="Name" value="Sathish"></parameter>
+<groups>
+<run>   
+<exclude name="selenium"></exclude>
+<exclude name="testng"></exclude>
+</run>
+</groups>
+<classes>
+<class name ="testNG.parallelTestcase">
+</class>
+</classes>
+</test>
+</suite>
+
+
+<!-- 
+<class name ="testNG.testNGGroup">
+<include name="selenium"></include>
+<include name="testng"></include>
+<include name="maven"></include> 
+<class name ="testNG.dependancyManagement">
+</class>
+<class name ="testNG.sampletestNG">
+</class>
+<class name ="testNG.skipTestCase">
+</class>
+<class name ="testNG.softwareLifeCycle">
+</class>
+<class name ="testNG.suiteExample">
+</class>
+ -->
